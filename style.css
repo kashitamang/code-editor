@@ -1,0 +1,20 @@
+* {
+    --color1: #76B068; 
+    --color2: #D1B16F;
+    --color3: #538FC6;
+}
+
+textarea {
+    min-width: 400px;
+    height: 50px;
+    background-color: #2d3e50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;    
+    display: block;
+    border: none;
+    padding: 10px;
+    color: rgb(109, 200, 18);
+    outline: none;
+    resize: none;
+}
