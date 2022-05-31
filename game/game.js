@@ -55,11 +55,11 @@ document.addEventListener('keydown', event => {
     }
 });
 
-document.addEventListener('keydown', event => {
-    if (event.ctrlKey) {
-        alert("you pressed the control key!");
-    }
-});
+// document.addEventListener('keydown', event => {
+//     if (event.ctrlKey) {
+//         alert("you pressed the control key!");
+//     }
+// });
 
 // document.addEventListener('keydown', event => {
 //     if (event.metaKey) {
@@ -108,6 +108,7 @@ document.addEventListener('keydown', event => {
         alert("you commanded ⌘/ to comment out a line!");
     }
 });
+
 // document.addEventListener ('keyup', event)
 // function startGame(){
 // //set the player points to 0
