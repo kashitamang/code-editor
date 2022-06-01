@@ -109,6 +109,16 @@ document.addEventListener('keydown', event => {
     }
 });
 
+function findOS(){
+    if (navigator.userAgentData.platform === 'macOS'){
+        console.log('this is a MacOS');
+    } else {
+        (navigator.userAgentData.platform === 'Windows')
+    } console.log('this is a Windows');
+} 
+
+
+
 // document.addEventListener ('keyup', event)
 // function startGame(){
 // //set the player points to 0
