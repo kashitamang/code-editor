@@ -1,6 +1,6 @@
 const rulesButton = document.getElementById('rules');
 const homeButton = document.getElementById('home');
-const startoverButton = document.getElementById('startover');
+const startOverButton = document.getElementById('start-over');
 const loadAudio = new Audio ('/assets/load.mp3');
 
 window.addEventListener('load', () => {
@@ -15,8 +15,8 @@ homeButton.addEventListener('click', () => {
     window.location.href = '/';
 });
 
-startoverButton.addEventListener('click', () => {
-    window.location.reload;
+startOverButton.addEventListener('click', () => {
+    window.location.href = '/game';
 });
 
 
