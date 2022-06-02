@@ -1,9 +1,10 @@
-console.log('hello word');
-let userCode = 'console.log("hello world")'
-try {
-    Function(userCode)()
-} catch (e) {
-    console.log(e)
-}
+const continueButton = document.getElementById('continue');
+const themeAudio = new Audio ('/assets/theme.mp3');
 
+window.addEventListener('load', () => {
+    themeAudio.play();
+});
 
+continueButton.addEventListener('click', () => {
+    window.location.href = '/rules';
+});

@@ -1,11 +1,26 @@
-// const promptElement = document.getElementById('prompt-element');
-// const scoreSpan = document.getElementById('score-span');
+const rulesButton = document.getElementById('rules');
+const homeButton = document.getElementById('home');
+const startoverButton = document.getElementById('startover');
+const loadAudio = new Audio ('/assets/load.mp3');
 
-// //keeps track of user state 
-// let points = 0;
+window.addEventListener('load', () => {
+    loadAudio.play();
+});
 
-console.log('hello from game.js');
-//tells program when user is ready to play
+rulesButton.addEventListener('click', () => {
+    window.location.href = '/rules';
+});
+
+homeButton.addEventListener('click', () => {
+    window.location.href = '/';
+});
+
+startoverButton.addEventListener('click', () => {
+    window.location.reload;
+});
+
+
+
 
 document.addEventListener('keydown', event => {
     if (event.spaceKey) {
@@ -116,53 +131,3 @@ function findOS(){
         (navigator.userAgentData.platform === 'Windows')
     } console.log('this is a Windows');
 } 
-
-
-
-// document.addEventListener ('keyup', event)
-// function startGame(){
-// //set the player points to 0
-//     points = 0;
-
-
-
-//     showCommandPrompt(1);
-// }
-
-// //shows the user the command they need to execute
-// function showCommandPrompt(showCommandPromptIndex) {
-//     const commandPrompt = commandPrompts.find(commandPrompt => 
-//         commandPrompt.id === commandPromptIndex)
-//     promptElement.innerText = commandPrompt.text
-// }
-
-// //listens to the use trying to execute the command
-// function tryCommand(command) {
-
-// }
-
-
-// const commandPrompts = [
-//     {
-//         id: 1, 
-//         text: 'lets start simple...pretend you are a cursor navigating a simple html file: cut a line',
-//     },
-//     {
-//         id: 2,
-//         text: 'good! now paste a line',
-//     },
-//     {
-//         id: 3,
-//         text: 'great, now lets try something harder: jump to the beginning of a line',
-//     },
-//     {
-//         id: 4,
-//         text: 'can you use that same method to jump to the end of a line?',
-//     },
-//     {
-//         id: 5,
-//         text: 'look at you go! now lets comment out a whole line',
-//     },
-// ]
-
-// startGame();
