@@ -31,7 +31,7 @@ frogButton.addEventListener('click', () => {
     scoreSpan.textContent = score;
     if (score === 100){
         frogButton.classList.add('hide');
-        heading.textContent = 'congratulations: you have reached 100 points!';
+        heading.textContent = 'ah! I feel so much better after that trance...should we do it again???!';
         winAudio.play();
     };
 });
