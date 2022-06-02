@@ -1,5 +1,7 @@
 const continueButton = document.getElementById('continue');
-const themeAudio = new Audio ('/assets/theme.mp3');
+const themeAudio = new Audio ('./assets/theme.mp3');
+
+// themeAudio.play();
 
 window.addEventListener('load', () => {
     themeAudio.play();

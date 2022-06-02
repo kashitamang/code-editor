@@ -62,3 +62,7 @@ button:hover {
     font-weight: 600;
     letter-spacing: .25rem;    
 }
+
+img {
+    width: 50px;
+}

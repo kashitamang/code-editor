@@ -2,9 +2,16 @@ const rulesButton = document.getElementById('rules');
 const homeButton = document.getElementById('home');
 const startOverButton = document.getElementById('start-over');
 const loadAudio = new Audio ('/assets/load.mp3');
+const scoreSpan = document.getElementById('score-span');
+const frogButton = document.getElementById('frog-button');
+const heading = document.getElementById('heading');
+const winAudio = new Audio ('../assets/win.mp3');
+
+let score = 0;
 
 window.addEventListener('load', () => {
     loadAudio.play();
+    frogButton.classList.remove('hide');
 });
 
 rulesButton.addEventListener('click', () => {
@@ -18,6 +25,31 @@ homeButton.addEventListener('click', () => {
 startOverButton.addEventListener('click', () => {
     window.location.href = '/game';
 });
+
+frogButton.addEventListener('click', () => {
+    score++;
+    scoreSpan.textContent = score;
+    if (score === 100){
+        frogButton.classList.add('hide');
+        heading.textContent = 'congratulations: you have reached 100 points!';
+        winAudio.play();
+    };
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -42,6 +42,14 @@ body {
     outline: none;
 }
 
+#frog-button {
+    background-color: black;
+}
+
+.hide {
+    display: none;
+}
+
 button {
     background-color: hsl(200, 100%, 50%);
     border: 1px solid hsl(200, 100%, 30%);
@@ -56,9 +64,19 @@ button:hover {
     background-color: hsl(200, 100%, 76%)
 }
 
+#frog-button:active {
+    opacity: 80%;
+    background-color: pink;
+}
+
 #score-heading {
     color:#2d3e50;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: .25rem;    
 }
+
+img {
+    width: 50px;
+}
+
